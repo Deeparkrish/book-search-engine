@@ -5,10 +5,14 @@ const { signToken } = require('../utils/auth');
 
 const resolvers ={
     Query :{
-        me : async(parent,{username})=>{
-            const params = username ?{username}:{};
-            return User.find(params).sort({createdAt :-1}).select('-__v -password');
-        },
+        me: async (parent, args) => {
+            const userData = await User.findOne({})
+              .select('-__v -password')
+              .populate('savedBooks');
+
+              return userData;
+
+          },
         
     },
     Mutation:{
@@ -29,10 +33,7 @@ const resolvers ={
             const token = signToken(user);
             return {user,token};
         },
-        // removeBook :async(parent,{bookId}){
-        //     const data = await 
-
-        // }
+     
 
 
 

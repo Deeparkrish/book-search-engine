@@ -4,6 +4,9 @@ const {gql} = require('apollo-server-express');
 // create type def 
 // The Thought data type will be the custom Thought data type.
  // Query will return an array of thoughts 
+
+ //// an Auth type must return a token and can optionally include any other user data.
+
 const typeDefs = gql `
 type Author {
     _id: ID
@@ -28,7 +31,6 @@ type User {
     bookCount: Int
     savedBooks: [Book]
 }
-// an Auth type must return a token and can optionally include any other user data.
 
 
 type Auth {
@@ -38,6 +40,8 @@ type Auth {
 type Query{
 
   me :User
+  users: [User]
+  user(username: String!): User
 
 }
 type Mutation{
