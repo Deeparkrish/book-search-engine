@@ -47,7 +47,7 @@ type Query{
 type Mutation{
     login(email:String!, password:String!):Auth,
     addUser(username:String!,email:String!,password:String!):Auth,
-    saveBook(bookId:Int,description:String,authors:[String!],title:String!,image:String, url:String):User
+    saveBook(bookId:ID!,description:String,authors:[String!],title:String!,image:String, url:String):User
     removeBook(bookId :ID!):User
 }
 `;
