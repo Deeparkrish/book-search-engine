@@ -1,11 +1,25 @@
+import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+//establish the connection to the back-end server's /graphql endpoint
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+//instantiste apollo client and 
+const client = new ApolloClient({
+  link: httpLink,  // connection end point
+  cache: new InMemoryCache(), //to cache API response data 
+});
+
 function App() {
   return (
+    <ApolloProvider client={client}>
+
     <Router>
       <>
         <Navbar />
@@ -16,6 +30,8 @@ function App() {
         </Switch>
       </>
     </Router>
+    </ApolloProvider>
+
   );
 }
 
