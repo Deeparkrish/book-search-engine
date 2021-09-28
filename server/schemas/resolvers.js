@@ -7,9 +7,8 @@ const resolvers ={
     Query :{
         me: async (parent, args,context) => {
             if(context.user){
-            const userData = await User.findOne({})
+            const userData = await User.findOne({_id: context.user._id })
               .select('-__v -password')
-              .populate('savedBooks');
 
               return userData;
 
@@ -23,7 +22,7 @@ const resolvers ={
         addUser :async(parent,args)=>{
             const user = await User.create(args);
             const token = signToken(user);
-            return {user,token};
+            return {token,user};
         },
         login :async(parent, {email,password})=>{
             const user =await User.findOne({email})
@@ -35,27 +34,25 @@ const resolvers ={
             throw new AuthenticationError('Invalid credentials');
             }
             const token = signToken(user);
-            return {user,token};
+            return {token,user};
         },
         saveBook: async (parent, args, context) => {
             if (context.user) {
-              const userData = await Thought.create({ ...args, username: context.user.username });
-          
-              await User.findByIdAndUpdate(
+              const userData =  await User.findOneAndUpdate(
                 { _id: context.user._id },
-                { $addToSet: { savedBooks: args.input } },
+                { $addToSet: { savedBooks: args } },
                 { new: true }
               );
               return userData;
             }
             throw new AuthenticationError('You need to be logged in!');
         },
-        removeBook: async (parent, args, context) => {
+        removeBook: async (parent, {bookId}, context) => {
             if (context.user) {
               console.log(context.user);
               const userData = await User.findOneAndUpdate(
                 { _id: context.user._id },
-                { $pull: { savedBooks: { bookId: args.bookId } } },
+                { $pull: { savedBooks: { bookId } } },
                 { new: true }
               );
               return userData;
@@ -63,12 +60,6 @@ const resolvers ={
       
             throw new AuthenticationError("You need to be logged in!");
           },    
-
-
-     
-
-
-
     }
 }
 

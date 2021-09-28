@@ -1,5 +1,6 @@
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import React from 'react';
+import { setContext } from '@apollo/client/link/context';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
@@ -10,10 +11,19 @@ import Navbar from './components/Navbar';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
-
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
 //instantiste apollo client and 
 const client = new ApolloClient({
-  link: httpLink,  // connection end point
+  
+  link: authLink.concat(httpLink),  // connection end point
   cache: new InMemoryCache(), //to cache API response data 
 });
 

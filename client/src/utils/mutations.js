@@ -1,70 +1,55 @@
 import gql from 'graphql-tag';
 
 export const LOGIN_USER =gql`
-mutation login($email:String!,$password String!){
+mutation login($email:String!,$password:String!){
     login(email:$email,password:$password){
+        token
         user{
         _id
         username
         }
-        token
-    
-    }
-}
-`;
-
-export const ADD_USER=gql`
-mutation addUser($username:String!,$password String!,$email:String!){
-    addUser(email:$email,password:$password, username:$username){
-        user{
-            _id
-            username
-            email 
-            bookcount 
-            savedBooks 
-            {
-                authors
-                bookId
-                image
-                link
-                title
-                description
-            }
-        }
-        token
-    }
-}
-`;
-
-export const SAVE_BOOK=gql`
-{
-    mutation saveBook($title String!,$author String!,bookId Int! ){
-        savebook(){
-            _id
-            username
-            email
-            bookCount
-            savedBooks {
-                # _id
-                bookId
-                authors
-                image
-                link
-                title
-
-        }
     }
 }`;
 
+export const ADD_USER= gql`
+mutation addUser($username:String!, $email:String!, $password:String!){
+    addUser(username:$username,email:$email,password:$password){
+        token
+        user{
+            _id
+            username
+            email
+        }
+       
+    }
+}`;
+
+export const SAVE_BOOK = gql`
+    mutation saveBook($input: BookData!) {
+        saveBook(input: $input) {
+            _id
+            username
+            email
+            savedBooks {
+                bookId
+                authors
+                image
+                description
+                title
+                link
+            }
+        }
+    }
+`;
+
 export const REMOVE_BOOK = gql`
-    mutation removeBook($bookId: ID!) {
+    mutation removeBook($bookId:String!) {
         removeBook(bookId:$bookId) {
             _id
             username
             email
-            bookCount
             savedBooks {
-                # _id
+                _id
                 bookId
                 authors
                 image
@@ -73,5 +58,4 @@ export const REMOVE_BOOK = gql`
                 description
             }
         }
-}
-`;
+    }`;
