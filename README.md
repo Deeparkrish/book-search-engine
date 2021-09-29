@@ -14,8 +14,7 @@ User may login if they have an existing account .
 Upon log-in users will  able to search for books by title and  save their favorite books also delete a saved book.
 Saved books are stored in their account, so next time they login,the user can view them on a button click .
 ##  Technologies:
-MongoDB
-Express.js
-React.js
-Node.js
+MongoDB Express.js React.js  Node.js
 
+## Contribution 
+By Deepa Krishnan ©2021 All Rights Reserved.
