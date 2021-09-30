@@ -1,4 +1,22 @@
 # Book Search Engine 
+ <p align="left">
+    <img src="https://img.shields.io/github/repo-size/deeparkrish/book-search-engine" />
+    <img src="https://img.shields.io/github/issues/deeparkrish/book-search-engine" />
+    <img src="https://img.shields.io/github/last-commit/deeparkrish/book-search-engine" >       
+  </p>
+  <p align="left"> 
+     <img src="https://img.shields.io/github/languages/top/book-search-engine/emp-portfolio"/>
+    <img src="https://img.shields.io/badge/React.js-blue"  />
+    <img src="https://img.shields.io/badge/-node.js-green" />
+    <img src="https://img.shields.io/badge/-express-red" >
+    <img src="https://img.shields.io/badge/-JSX-orange"/>
+    <img src="https://img.shields.io/badge/-HTML-lightgreen"/>
+    <img src="https://img.shields.io/badge/-Mongoose -pink"/>
+      <img src="https://img.shields.io/badge/-Apollo-yellow"/>
+
+
+</p>
+   
 
 ##  Description
 Google Books API search engine built in MERN Stack. Other than searching for books, users can sign up and login their account to save their favorive books.
