@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/github/last-commit/deeparkrish/book-search-engine" >       
   </p>
   <p align="left"> 
-     <img src="https://img.shields.io/github/languages/top/book-search-engine/emp-portfolio"/>
+     <img src="https://img.shields.io/github/languages/top/deeparkrish/book-search-engine"/>
     <img src="https://img.shields.io/badge/React.js-blue"  />
     <img src="https://img.shields.io/badge/-node.js-green" />
     <img src="https://img.shields.io/badge/-express-red" >
