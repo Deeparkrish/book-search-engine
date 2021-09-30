@@ -26,7 +26,7 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
 - I WANT to search for new books to read
 - SO THAT I can keep a list of books to purchase
 ##  Usage
-The App enables the wnd user to search books with keywords.
+The App enables an end user to search books with keywords.
 User can sign up for a new account by providing user name, email and password.
 User may login if they have an existing account .
 Upon log-in users will  able to search for books by title and  save their favorite books also delete a saved book.
