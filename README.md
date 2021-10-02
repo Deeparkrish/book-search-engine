@@ -35,10 +35,8 @@ Saved books are stored in their account, so next time they login,the user can vi
 MongoDB Express.js React.js  Node.js GraphQL 
 
 ## MockUp
-  <div>
-  <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20all%20books.png" width = "200px" height="400px"  />
-    <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20saved%20books.png"  width = "200px" height = "400px"  />
- </div>
+    ![MyDemo](https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/demo.gif) 
+
  
 ## Deployment 
    https://deepa-book-search-engine.herokuapp.com/
