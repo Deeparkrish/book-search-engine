@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/-express-red" >
     <img src="https://img.shields.io/badge/-JSX-orange"/>
     <img src="https://img.shields.io/badge/-HTML-lightgreen"/>
-    <img src="https://img.shields.io/badge/-Mongoose -pink"/>
+    <img src="https://img.shields.io/badge/-MongoDB -pink"/>
       <img src="https://img.shields.io/badge/-Apollo-yellow"/>
 
 
@@ -32,7 +32,16 @@ User may login if they have an existing account .
 Upon log-in users will  able to search for books by title and  save their favorite books also delete a saved book.
 Saved books are stored in their account, so next time they login,the user can view them on a button click .
 ##  Technologies:
-MongoDB Express.js React.js  Node.js
+MongoDB Express.js React.js  Node.js GraphQL 
+
+## MockUp
+  <div>
+  <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20all%20books.png" width = "200px" height="400px"  />
+    <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20saved%20books.png"  width = "200px" height = "400px"  />
+ </div>
+ 
+## Deployment 
+   https://deepa-book-search-engine.herokuapp.com/
 
 ## Contribution 
 By Deepa Krishnan ©2021 All Rights Reserved.
