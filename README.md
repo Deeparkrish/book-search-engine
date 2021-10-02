@@ -35,7 +35,7 @@ Saved books are stored in their account, so next time they login,the user can vi
 MongoDB Express.js React.js  Node.js GraphQL 
 
 ## MockUp
-    ![MyDemo](https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/demo.gif) 
+   ![MyDemo](https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/demo.gif) 
 
  
 ## Deployment 
