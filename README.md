@@ -104,13 +104,13 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
   
 
 ##  Process
-  The App enables an end user to search books with keywords.
-  User can sign up for a new account by providing user name, email and password.
-  User may login if they have an existing account .
-  Upon log-in users will  able to search for books by title and  save their favorite books also delete a saved book.
-  Saved books are stored in their account, so next time they login,the user can view them on a button click .
-  At the backend, this has been inplemented in GrapQL using <i>Typdefs</i> and <i>Resolvers</i> ,that make up the schema.
-  The Front end Graphql, has corresponding <i>Queries</i> and <i>Mutations</i> which help to fetch data from backend.
+  - The App enables an end user to search books with keywords.
+  - User can sign up for a new account by providing user name, email and password.
+  - User may login if they have an existing account .
+  - Upon log-in users will  able to search for books by title and  save their favorite books also delete a saved book.
+  - Saved books are stored in their account, so next time they login,the user can view them on a button click .
+  - At the backend, this has been inplemented in GrapQL using <i>Typdefs</i> and <i>Resolvers</i> ,that make up the schema.
+  - The Front end Graphql, has corresponding <i>Queries</i> and <i>Mutations</i> which help to fetch data from backend.
 
 
 ## MockUp
