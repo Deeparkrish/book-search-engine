@@ -36,8 +36,8 @@ MongoDB Express.js React.js  Node.js GraphQL
 
 ## MockUp
   <div>
-  <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20all%20books.png" width = "800px" height="600px"  />
-    <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20saved%20books.png"  width = "800px" height = "600px"  />
+  <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20all%20books.png" width = "400px" height="600px"  />
+    <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20saved%20books.png"  width = "400px" height = "600px"  />
 
  </div>
 
