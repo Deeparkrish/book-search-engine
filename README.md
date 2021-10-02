@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/-Concurrently-lightgreen"/>
     <img src="https://img.shields.io/badge/-Mongoose -pink"/>
     <img src="https://img.shields.io/badge/-ApolloServer-yellow"/>
-     <img src="https://img.shields.io/badge/-jwtdecode-grey"/>
+     <img src="https://img.shields.io/badge/-jwtdecode-lightblue"/>
      <img src="https://img.shields.io/badge/-Graphql-purple"/>
 
 
