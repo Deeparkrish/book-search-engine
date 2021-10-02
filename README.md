@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/-express-red" >
     <img src="https://img.shields.io/badge/-JSX-orange"/>
     <img src="https://img.shields.io/badge/-HTML-lightgreen"/>
-    <img src="https://img.shields.io/badge/-Mongoose -pink"/>
+    <img src="https://img.shields.io/badge/-MongoDB -pink"/>
       <img src="https://img.shields.io/badge/-Apollo-yellow"/>
 
 
