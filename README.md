@@ -40,6 +40,8 @@ MongoDB Express.js React.js  Node.js GraphQL
     <img src ="https://github.com/Deeparkrish/book-search-engine/blob/main/src/images/view%20saved%20books.png"  width = "200px" height = "400px"  />
 
  </div>
+## Deployment 
+   https://deepa-book-search-engine.herokuapp.com/
 
 ## Contribution 
 By Deepa Krishnan ©2021 All Rights Reserved.
