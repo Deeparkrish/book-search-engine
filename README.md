@@ -44,7 +44,7 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
 #### Middleware
  * JSON Web Token (JWT) authentication middleware
  * Mongoose - ODM for MongoDB
-<div>
+#### Others
  * GraphQL is a query language for APIs and a runtime for fulfilling queries with the existing data, giving clients the power to ask for exactly what they need    and nothing more. 
  * Apollo Server is an open-source, spec-compliant GraphQL server that's compatible with any GraphQL client, including Apollo Client, the client will use in      their MERN application. The apollo-server-express  is used package to integrate GraphQL into Express.js server, and the @apollo/client package to make requests from the React front end to the GraphQL API.
  * React Router is a collection of navigational components that compose declaratively with the application, allowing you to make a single-page React applications behave more like multi-page applications. 
@@ -52,7 +52,8 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
  * jwt-decode is an npm package that helps decode JWTs from their Base64Url encoding. You’ll use it to extract non-sensitive data such as the token’s expiration date to see if it’s expired before making a request to the server.
  * The faker is a npm package allows you to generate massive amounts of fake data in the development environment of  Node.js applications.
  * The nodemon package simplifies the development environment by automatically restarting Node.js applications when file changes in the directory are detected.
-</div>
+
+
 ## License 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
   This app is covered under MIT license.
@@ -108,6 +109,8 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
   User may login if they have an existing account .
   Upon log-in users will  able to search for books by title and  save their favorite books also delete a saved book.
   Saved books are stored in their account, so next time they login,the user can view them on a button click .
+  At the backend, this has been inplemented in GrapQL using <i>Typdefs</i> and <i>Resolvers</i> ,that make up the schema.
+  The Front end Graphql, has corresponding <i>Queries</i> and <i>Mutations</i> which help to fetch data from backend.
 
 
 ## MockUp
