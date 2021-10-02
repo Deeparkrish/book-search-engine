@@ -44,7 +44,7 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
 #### Middleware
  * JSON Web Token (JWT) authentication middleware
  * Mongoose - ODM for MongoDB
-
+<hr>
  * GraphQL is a query language for APIs and a runtime for fulfilling queries with the existing data, giving clients the power to ask for exactly what they need    and nothing more. 
  * Apollo Server is an open-source, spec-compliant GraphQL server that's compatible with any GraphQL client, including Apollo Client, the client will use in      their MERN application. The apollo-server-express  is used package to integrate GraphQL into Express.js server, and the @apollo/client package to make requests from the React front end to the GraphQL API.
  * React Router is a collection of navigational components that compose declaratively with the application, allowing you to make a single-page React applications behave more like multi-page applications. 
@@ -86,6 +86,21 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
    Modify server.js to get connected to the database, using the MongoURI and also add PORT data.
 
 ## Usage 
+   #### Start Server 
+   In "server" directory run :
+       
+       npm run watch
+       
+   #### Start Client 
+   In "client" directory run :
+       
+       npm start
+       
+   #### App 
+   To run client and server concurrently,go to the root directory of the project and  : 
+   
+      npm run develop
+  
 
 ##  Process
   The App enables an end user to search books with keywords.
