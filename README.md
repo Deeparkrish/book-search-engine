@@ -7,12 +7,16 @@
   <p align="left"> 
      <img src="https://img.shields.io/github/languages/top/deeparkrish/book-search-engine"/>
     <img src="https://img.shields.io/badge/React.js-blue"  />
-    <img src="https://img.shields.io/badge/-node.js-green" />
-    <img src="https://img.shields.io/badge/-express-red" >
-    <img src="https://img.shields.io/badge/-JSX-orange"/>
-    <img src="https://img.shields.io/badge/-HTML-lightgreen"/>
-    <img src="https://img.shields.io/badge/-MongoDB -pink"/>
-      <img src="https://img.shields.io/badge/-Apollo-yellow"/>
+    <img src="https://img.shields.io/badge/-Node.js-green" />
+    <img src="https://img.shields.io/badge/-Express-red" >
+    <img src="https://img.shields.io/badge/-JWT-orange"/>
+    <img src="https://img.shields.io/badge/-Concurrently-lightgreen"/>
+    <img src="https://img.shields.io/badge/-Mongoose -pink"/>
+    <img src="https://img.shields.io/badge/-ApolloServer-yellow"/>
+     <img src="https://img.shields.io/badge/-jwt-decode-lightblue"/>
+     <img src="https://img.shields.io/badge/-Graphql-purple"/>
+
+
 
 
 </p>
